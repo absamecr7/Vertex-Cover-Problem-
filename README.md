@@ -35,7 +35,7 @@ Finding a smallest vertex cover is classical optimization problem and is an NP-h
           remove all edges incident to u or v from E
       return C
       
-    Basically, the algorithm works by finding a maximal matching in GG and adding at least one endpoint of each edge to the covering        set of vertices CC. The optimal answer will contain one vertex from each edge in the matching, but a suboptimal covering could          contain both endpoints from each edge, so the covering set CC could be as much as two times as big as the optimal answer. This          algorithm can be adapted to handle weighted graph
+    Basically, the algorithm works by finding a maximal matching in GG and adding at least one endpoint of each edge to the covering   set of vertices CC. The optimal answer will contain one vertex from each edge in the matching, but a suboptimal covering could contain both endpoints from each edge, so the covering set CC could be as much as two times as big as the optimal answer. This algorithm can be adapted to handle weighted graph
       
 ```
 
@@ -49,7 +49,9 @@ Finding a smallest vertex cover is classical optimization problem and is an NP-h
   
 ### **Complexity:**
 
-  This is a polynomial time approximation algorithm (since it isn't guaranteed to return the optimal vertex cover) that runs                in O(V+E) time.
+  Running Time: Exponential
+  
+  This is a polynomial time approximation algorithm (since it isn't guaranteed to return the optimal vertex cover) that runs in O(V+E) time.
 
 
 ### **Applications:**

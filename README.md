@@ -1,5 +1,7 @@
 # Vertex-Cover-Problem
-  Python program implementation of vertex cover problem, using greedy approach.
+  Implementation of vertex cover problem, using:
+    1. Approximate Method.
+    2. Greedy Approach. 
 
 
 ### **Description**
@@ -39,13 +41,29 @@ Finding a smallest vertex cover is classical optimization problem and is an NP-h
       
 ```
 
-
+```
+  Approximate Method:
+  
+      -> Initialize the result as {}
+      -> Consider a set of all edges in given graph.  Let the set be E.
+      -> Do following while E is not empty
+          a) Pick an arbitrary edge (u, v) from set E and add 'u' and 'v' to result
+          b) Remove all edges from E which are either incident on u or v.
+      -> Return result 
+```
 ### **Output:**
 
   A vertex cover set(one in our case, although there can be many).
   ```
+  By Greedy:
+  
   [1, 2]
   ```
+  ```
+  By Approximate Method:
+  
+  [0,1,2,3]
+  '''
   
 ### **Complexity:**
 

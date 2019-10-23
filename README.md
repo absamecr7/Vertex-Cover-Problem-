@@ -25,21 +25,6 @@ Finding a smallest vertex cover is classical optimization problem and is an NP-h
 
 ### **Algorithm:**
 
-```
-    Greedy approach to find vertex cover set:
-      Greedy algorithm always takes the vertex with the highest degree, add it to the cover set, remove it from the graph, and repeats.
-    
-    def greedy(E, V)
-      C = []
-      while E not empty:
-          select any edge with endpoints (u,v) from E
-          add (u,v) to C
-          remove all edges incident to u or v from E
-      return C
-      
-    Basically, the algorithm works by finding a maximal matching in GG and adding at least one endpoint of each edge to the covering   set of vertices CC. The optimal answer will contain one vertex from each edge in the matching, but a suboptimal covering could contain both endpoints from each edge, so the covering set CC could be as much as two times as big as the optimal answer. This algorithm can be adapted to handle weighted graph
-      
-```
 
 ```
   Approximate Method:
@@ -51,6 +36,23 @@ Finding a smallest vertex cover is classical optimization problem and is an NP-h
           b) Remove all edges from E which are either incident on u or v.
       -> Return result 
 ```
+
+```
+    Greedy approach to find vertex cover set:
+      Greedy algorithm always takes the vertex with the highest degree, add it to the cover set, remove it from the graph, and repeats.
+    
+     Greedy(E, V)
+        C = []
+        while E not empty:
+            select any edge with endpoints (u,v) from E
+            add (u,v) to C
+            remove all edges incident to u or v from E
+        return C
+      
+    Basically, the algorithm works by finding a maximal matching in GG and adding at least one endpoint of each edge to the covering   set of vertices CC. The optimal answer will contain one vertex from each edge in the matching, but a suboptimal covering could contain both endpoints from each edge, so the covering set CC could be as much as two times as big as the optimal answer. This algorithm can be adapted to handle weighted graph
+      
+```
+
 ### **Output:**
 
   A vertex cover set(one in our case, although there can be many).

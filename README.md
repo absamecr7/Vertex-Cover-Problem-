@@ -59,7 +59,7 @@ Finding a smallest vertex cover is classical optimization problem and is an NP-h
   ```
   By Greedy:
   
-  [1, 2]
+  [1,2]
   ```
   ```
   By Approximate Method:

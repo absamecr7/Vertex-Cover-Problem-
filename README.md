@@ -61,11 +61,12 @@ Finding a smallest vertex cover is classical optimization problem and is an NP-h
   
   [1,2]
   ```
+  
   ```
   By Approximate Method:
   
   [0,1,2,3]
-  '''
+  ```
   
 ### **Complexity:**
 
